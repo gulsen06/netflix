@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Netflix Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="baslik">
+        <h1>NET <span style="color: red">FLIX</span></h1>
+        <h3>
+          Thank you for signing up to Netflix.Tell me more abaut yourself.
+        </h3>
+      </div>
+      <form action="result.html">
+        <div class="box">
+          <label for="name">Name</label><br />
+          <input
+            type="name"
+            id="name"
+            name="Name"
+            placeholder=" enter your name"
+          />
+          <br />
+          <label for="age">Age</label><br />
+          <input type="number" id="age" name="age" placeholder="" /><br />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="enter your e-mail"
+          />
+        </div>
+        <br />
+        <div class="box">
+          <legend>Content Type</legend>
+          <select name="content" id="content">
+            <option value="movie">Movies</option>
+            <option value="serie" selected>Serie</option>
+          </select>
+        </div>
+        <br />
+        <div class="box">
+          <legend>Movie Type</legend>
+          <input type="checkbox" name="movieType" id="comedy" value="Comedy" />
+          <label for="comedy">Comedy</label><br />
+          <input type="checkbox" name="movieType" id="action" value="Action" />
+          <label for="action">Action</label><br />
+          <input
+            type="checkbox"
+            name="movieType"
+            id="romance"
+            value="Romance"
+          />
+          <label for="romance">Romance</label><br />
+        </div>
+        <br />
+        <div class="box">
+          <legend>Gender</legend>
+          <input type="radio" name="Gender" id="male" value="Male" />
+          <label for="male">Male</label><br />
+          <input type="radio" name="Gender" id="female" value="Female" />
+          <label for="female">Female</label><br />
+          <input type="radio" name="Gender" id="other" value="Other" />
+          <label for="other">Male</label><br />
+        </div>
+        <br />
+        <div class="box">
+          <legend>Feadback</legend>
+          <textarea
+            name="comments"
+            id="comment"
+            placeholder="any comment..."
+          ></textarea>
+        </div>
+        <input type="submit" value="SUBMIT" class="submit" />
+        <!-- <input type="reset" value="Reset" /> -->
+      </form>
+    </div>
+  </body>
+</html>
